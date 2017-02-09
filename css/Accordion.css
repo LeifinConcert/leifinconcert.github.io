@@ -1,0 +1,163 @@
+.accordion {
+    width: 100%;
+    max-width: 1080px;
+    height: 350px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 500ms ease;
+}
+
+.accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion ul li div a {
+    display: block;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 110px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 180px;
+}
+
+.accordion ul li div a p {
+    top: 180px;
+    font-size: 10px;
+}
+
+.accordion ul li:nth-child(1) {
+    background-image: url("../img/bilder-team/img1.jpg");
+}
+
+.accordion ul li:nth-child(2) {
+    background-image: url("../img/bilder-team/img2.jpg");
+}
+
+.accordion ul li:nth-child(3) {
+    background-image: url("../img/bilder-team/img3.jpg");
+}
+
+.accordion ul li:nth-child(4) {
+    background-image: url("../img/bilder-team/img4.jpg");
+}
+
+.accordion ul li:nth-child(5) {
+    background-image: url("../img/bilder-team/img5.jpg");
+}
+
+.accordion ul li:nth-child(6) {
+    background-image: url("../img/bilder-team/img6.jpg");
+}
+
+.accordion ul li:nth-child(7) {
+    background-image: url("../img/bilder-team/img-7.jpg");
+}
+
+.accordion ul li:nth-child(8) {
+    background-image: url("../img/bilder-team/img8.jpg");
+}
+
+.accordion ul li:nth-child(9) {
+    background-image: url("../img/bilder-team/img9.jpg");
+}
+
+.accordion ul li:nth-child(10) {
+    background-image: url("../img/bilder-team/img10.jpg");
+}
+
+.accordion ul li:nth-child(11) {
+    background-image: url("../img/bilder-team/img11.jpg");
+}
+
+.accordion ul:hover li {
+    width: 8%;
+}
+
+.accordion ul:hover li:hover {
+    width: 25%;
+    cursor: pointer;
+}
+
+.accordion ul:hover li:hover a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        font-size: 11px;
+    }
+    .accordion {
+        height: auto;
+    }
+    /*.accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        -webkit-transition: none;
+        transition: none;
+    }*/
+    .accordion ul {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+    }
+    .accordion ul:hover li:hover {
+        width: 100%;
+        cursor: pointer;
+    }
+}
