@@ -45,6 +45,16 @@ h2 {
     font-family: 'Raleway', sans-serif;
 }
 
+.crowd-div {
+    position: relative;
+    top: 70px;
+    -ms-transform: rotate(10deg);
+    /* IE 9 */
+    -webkit-transform: rotate(10deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+}
+
 .VorderKamera-section {
     width: 100%;
     padding: 50px 0;
